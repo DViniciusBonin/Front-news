@@ -2,14 +2,16 @@
 
   <aside>
       <ul> 
-          <a><router-link to="/editar-user" class="clean-format">Editar cadastro</router-link></a>
-          <a> <router-link to="/verdepois" class="clean-format">Ver Depois</router-link></a>
+                
+          <a><router-link to="/my-profile/editar-user" class="clean-format">Editar cadastro</router-link></a>
+          <a> <router-link to="" class="clean-format">Ver Depois</router-link></a>
          
       </ul>
           
   </aside>
 
 </template>
+  
 
 <script>
 export default {

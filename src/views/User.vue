@@ -1,8 +1,10 @@
 <template>
 <div>
+  
     <Nav :msg="msgHello" :nameUser="user.nome"/>
     <Aside />
     <router-view />
+    
     
 </div>
 </template>

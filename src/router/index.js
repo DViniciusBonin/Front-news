@@ -15,18 +15,22 @@ const routes = [
   {
     path: '/my-profile',
     name: 'profile',
-    component: User
+    component: User,
+    children: [
+      {
+        path: '/my-profile/editar-user',
+        name: 'EditarCadastro',
+        component: Editar
+      }
+      
+    ]
 
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     // component: () => import(/* webpackChunkName: "about" */ '../views/User.vue')
   },
-  {
-    path: '/editar-user',
-    name: 'EditarCadastro',
-    component: Editar
-  }
+  
 ]
 
 const router = new VueRouter({

@@ -1,6 +1,7 @@
 <template>
-  <div class="
-  "> oi</div>
+  <div class="editar">
+      to aqui
+  </div>
 </template>
 
 <script>
@@ -10,5 +11,10 @@ export default {
 </script>
 
 <style>
+  .editar {
+    margin: 0 auto;
 
+    width:50%;
+    background: red;
+  }
 </style>
