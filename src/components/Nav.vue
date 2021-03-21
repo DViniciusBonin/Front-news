@@ -4,7 +4,7 @@
         {{msg}} {{nameUser}}
         </div>
         <div class="direita">
-            <button class="button is-danger is-outlined ">Logout</button>
+            <button @click= "logout" class="button is-danger is-outlined ">Logout</button>
         </div>
     </nav>
 
@@ -23,6 +23,14 @@ export default {
         msg: String,
         nameUser: String
 
+    },
+
+    methods: {
+        logout: function() {
+            localStorage.removeItem('user')
+
+            this.$router.push('/')
+        }
     }
 
 }
